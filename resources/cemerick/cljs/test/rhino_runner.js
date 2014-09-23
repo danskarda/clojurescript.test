@@ -57,9 +57,9 @@ arguments.forEach(function (arg) {
         try {
             load(arg);
         } catch (e) {
-            failIfCljsTestUndefined();
             print("Error in file: \"" + arg + "\"");
             print(e);
+            failIfCljsTestUndefined();
         }
     } else {
         try {
